@@ -1,48 +1,48 @@
-variable "product" {}
+variable product {}
 
-variable "location" {
+variable location {
   default = "UK South"
 }
 
 // as of now, UK South is unavailable for Application Insights
-variable "appinsights_location" {
+variable appinsights_location {
   default     = "West Europe"
   description = "Location for Application Insights"
 }
 
-variable "common_tags" {
+variable common_tags {
   type = map(string)
 }
 
-variable "env" {}
+variable env {}
 
-variable "application_type" {
+variable application_type {
   default     = "web"
   description = "Type of Application Insights (web/other)"
 }
 
-variable "tenant_id" {
+variable tenant_id {
   description = "(Required) The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. This is usually sourced from environemnt variables and not normally required to be specified."
 }
 
-variable "jenkins_AAD_objectId" {
+variable jenkins_AAD_objectId {
   description = "(Required) The Azure AD object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault. The object ID must be unique for the list of access policies."
 }
 
-variable "subscription" {}
+variable subscription {}
 
-variable "team_name" {
+variable team_name {
   default = "em"
 }
 
-variable "team_contact" {
+variable team_contact {
   default = "#em-dev-chat"
 }
 
-variable "name" {
+variable name {
   default = false
 }
 
-variable "asp_capacity" {
+variable asp_capacity {
   default = 2
 }
