@@ -9,6 +9,7 @@ module "key_vault" {
   product_group_object_id = "5d9cd025-a293-4b97-a0e5-6f43efce02c0"
   common_tags = var.common_tags
   create_managed_identity    = true
+  soft_delete_enabled = true
 }
 
 output "vaultName" {
