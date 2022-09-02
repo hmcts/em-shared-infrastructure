@@ -4,5 +4,6 @@
 
 withInfraPipeline("rpa") {
   enableSlackNotifications("#em-dev-chat")
+  syncBranchesWithMaster(['demo', 'perftest', 'ithc'])
 }
 
