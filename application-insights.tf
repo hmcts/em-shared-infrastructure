@@ -32,6 +32,5 @@ resource "azurerm_key_vault_secret" "em_app_insights_connection_string" {
 }
 
 output "em_appInsightsInstrumentationKey" {
-  sensitive = true
   value = azurerm_application_insights.em_appinsights.instrumentation_key
 }
