@@ -1,3 +1,4 @@
+
 // Need to create new AppInsights in the UK South region only, as per the requirement.
 
 resource "azurerm_application_insights" "em_appinsights" {
