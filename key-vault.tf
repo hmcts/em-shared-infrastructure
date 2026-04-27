@@ -10,6 +10,12 @@ module "key_vault" {
   common_tags             = local.tags
   create_managed_identity = true
   soft_delete_enabled     = true
+  jenkins_object_id       = data.azurerm_user_assigned_identity.jenkins.principal_id
+}
+
+data "azurerm_user_assigned_identity" "jenkins" {
+  name                = "jenkins-${var.env}-mi"
+  resource_group_name = "managed-identities-${var.env}-rg"
 }
 
 output "vaultName" {
