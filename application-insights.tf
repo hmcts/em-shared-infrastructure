@@ -9,7 +9,7 @@ module "application_insights" {
   name    = "em"
 
   resource_group_name = azurerm_resource_group.rg.name
-
+  sampling_percentage = var.sampling_percentage
   common_tags = local.tags
 }
 
