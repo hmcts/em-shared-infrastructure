@@ -55,4 +55,5 @@ variable "destroy_me" {
 
 variable "sampling_percentage" {
   description = "Specifies the sampling percentage for Application Insights"
+  default     = 1
 }
