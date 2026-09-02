@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure@2.4.3") _
+@Library("Infrastructure@2.5.0") _
 
 sharedInfrastructurePipeline('rpa', 'sandbox', 'sandbox')
 sharedInfrastructurePipeline('rpa', 'saat', 'sandbox')
